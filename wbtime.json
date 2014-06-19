@@ -52,7 +52,7 @@
 		"id":"KarkaQueen",
 		"name":{"en":"Karka Queen","fr":"Reine karka","zh-tw":"Karka Queen 卡卡女王"},
 		"map":{"en":"Southsun Cove","fr":"Crique de Sud-Soleil"},
-		"uptime":["19:00","03:30","08:00","11:00","16:00"],
+		"uptime":["19:00","23:00","03:30","08:00","11:00","16:00"],
 		"scale":"hardcore",
 		"waypoint":"[&BNcGAAA=]"
 	},{
@@ -66,7 +66,7 @@
 		"id":"Tequatl",
 		"name":{"en":"Tequatl","fr":"Tequatl","zh-tw":"Tequatl 屍龍TEQ"},
 		"map":{"en":"Sparkfly Fen","fr":"Marais de Lumillule"},
-		"uptime":["04:30","09:00","12:00","17:00","20:00"],
+		"uptime":["00:00","04:30","09:00","12:00","17:00","20:00"],
 		"scale":"hardcore",
 		"waypoint":"[&BNABAAA=]"
 	},{
