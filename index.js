@@ -45,7 +45,10 @@ function refreshall () {
 			var j = 0;
 			while(json.worldboss[i].uptime[j]) {
 				sec = str2sec(json.worldboss[i].uptime[j]);
-				lsec = sec + ((7 + getTimezone()) * 3600)
+                                // boss uptime is given in PST, must convert to
+                                // UTC for server time:
+                                utc_sec = sec + 7 * 3600
+				lsec = utc_sec + getTimezone() * 3600
 				if (lsec >= 86400) lsec -= 86400;
 				var tname = (json.worldboss[i].name[clang]?json.worldboss[i].name[clang]:json.worldboss[i].name.en);
 				var tmap = (json.worldboss[i].map[clang]?json.worldboss[i].map[clang]:json.worldboss[i].map.en);
@@ -54,7 +57,9 @@ function refreshall () {
 					id: json.worldboss[i].id,
 					name: tname,
 					map: tmap,
-					uptime: json.worldboss[i].uptime[j], 
+                                        // Use server time in UTC
+                                        // uptime: json.worldboss[i].uptime[j],
+                                        uptime: sec2str(utc_sec),
 					upsec: sec, 
 					lctime: sec2str(lsec),
 					lcsec: lsec,
