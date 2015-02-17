@@ -71,8 +71,8 @@ function refreshall () {
 					name: tname,
 					map: tmap,
                                         // Use server time in UTC
-                                        // uptime: json.worldboss[i].uptime[j],
-                                        uptime: sec2str(utc_sec),
+                                        uptime: json.worldboss[i].uptime[j],
+                                        //uptime: sec2str(utc_sec),
 					upsec: sec, 
 					lctime: sec2str(lsec),
 					lcsec: lsec,
